@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap')
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Chakra Petch", sans-serif;
+    text-align: justify;
+  }
+
+  .wrapper, .contact-section {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ba7b7c;
+    color:#f2e2e2;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2mm;
+  }
+
+  .brand{
+    margin-top: -7px;
+  }
+
+  .brand span{
+    color: #d7a9a9;
+  }
+
+.menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+  .menu li{
+    list-style: none;
+  }
+
+  .menu a{
+    color: #f2e2e2;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+
+  .menu .active{
+    color: #d7a9a9;
+  }
+
+  .menu a:hover{
+    background-color: #f2e2e2;
+    color: #ba7b7c;
+    transition: ease-in .4s;
+  }
+
+  .main{
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+  }
+
+  h1{
+    font-size: 3em;
+  }
+
+  span{
+    color: #d7a9a9;
+  }
+
+  .main img{
+    width: 360px;
+    border: none;
+    height: 520px;
+    padding: 2em;
+  }
+
+  .about{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    width: 100vw;
+    align-items: center;
+  }
+
+  .about img{
+    width: 100%;
+    grid-column: 1/5;
+  }
+
+  .about-info{
+    grid-column: 5/10;
+    padding: 3em;
+  }
+
+  .about-info h2{
+    font-size: 2em;
+    color: #d7a9a9;
+  }
+
+  .divider{
+    height: 4px;
+    width: 60px;
+    background-color: #ba7b7c;
+    margin-top: 5px;
+    margin-bottom: 2em;
+  }
+
+  .about p{
+    margin-bottom: 1em;
+  }
+
+  .education{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    width: 100vw;
+    align-items: center;
+    background-color: #ba7b7c;
+  }
+
+  .education img{
+    width: 100%;
+    grid-column: 1/5;
+    padding: 1em;
+  }
+
+  .education-info{
+    grid-column: 5/10;
+    padding: 3em;
+  }
+
+  .education-info h2{
+    font-size: 2em;
+    color: #f2e2e2;
+  }
+
+  .divider{
+    height: 4px;
+    width: 60px;
+    background-color: #d7a9a9;
+    margin-top: 5px;
+    margin-bottom: 2em;
+  }
+
+  .education p{
+    margin-bottom: 1em;
+  }
+
+  .habilidades{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    width: 100vw;
+    align-items: center;
+  }
+
+  .habilidades img{
+    width: 600px;
+    border: none;
+    height: 400px;
+    padding: 2em;
+    align-items: center;
+
+    /*width: 100%;
+    grid-column: 1/5;
+    padding: 1em;
+    height: 400px;*/
+  }
+
+  .info-habilidades{
+    margin: 0 auto;
+    width: 50vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+  }
+
+  .info-habilidades h1{
+    font-size: 2em;
+    color: #d7a9a9;
+  }
+
+  .divider{
+    height: 4px;
+    width: 60px;
+    background-color: #ba7b7c;
+    margin-top: 5px;
+    margin-bottom: 2em;
+  }
+
+  .habilidades p{
+    margin-bottom: 1em;
+  }
+
+.contact-heading h2{
+    font-size: 3em;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+  .container-contact{
+    padding: 3em;
+    margin: 0 auto;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2em;
+}
+
+.form input{
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: #d7a9a9;
+    border: none;
+    border-bottom: 1px solid;
+    color: #f2e2e2;
+}
+
+.form textarea{
+    height: 150px;
+    background-color: #d7a9a9;
+    color: white;
+    padding: 1.5em;
+    border: 1px solid;
+}
+
+.btn-submit{
+    padding: 10px 20px;
+    margin: 1em;
+    border: none;
+    text-transform: uppercase;
+    background-color: #f2e2e2;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 69);
+}
+
+.btn-submit:hover{
+    background-color: #d7a9a9;
+    box-shadow: none;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    background-color: #f2e2e2;
+}
+
+.footer-content h2{
+    font-size: 3em;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.footer-content p{
+    font-size: 1em;
+    text-align: center;
+    color: #ba7b7c;
+}
+
+.social-network{
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin-top: 1em;
+}
+
+
+
+
+
+
+
